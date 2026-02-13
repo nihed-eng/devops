@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "tonlogin/nomimage:1.0"
+        DOCKER_IMAGE = "nihedmath/devops:1.0"
     }
 
     stages {
@@ -28,7 +28,7 @@ pipeline {
 
         stage('Push to DockerHub') {
             steps {
-                sh 'docker login -u tonlogin -p tonpassword'
+                sh 'docker login -u nihedmath -p nihed.2024'
                 sh 'docker push $DOCKER_IMAGE'
             }
         }

@@ -1,5 +1,5 @@
-# Base image Java
-FROM openjdk:17-jdk-alpine
+# Base image Java valide
+FROM eclipse-temurin:17-jdk-alpine
 
 # Répertoire de travail
 WORKDIR /app
